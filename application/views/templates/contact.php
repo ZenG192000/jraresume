@@ -64,5 +64,12 @@
             <a href="https://www.youtube.com/@ZenG2000" target="_" class="fa fa-youtube"></a>
             <a href="https://github.com/ZenG192000" target="_" class="fa fa-github"></a>
         </div>
+        <div class="header">
+            <h1>For inquiries of Toyota Motors Contact us here</h1>
+        </div>
+        <div class="row">
+            <a href="https://www.facebook.com/PxI.Romero" target="_" class="fa fa-facebook"></a>
+            <p style="text-align: center; padding-top: 5px; color: white;">Agent: Joven Romero Almonte</p>
+        </div>
     </div>
 </section>
