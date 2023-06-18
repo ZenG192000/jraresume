@@ -136,7 +136,64 @@
         crossorigin="anonymous"></script>
     <!-- font awesome -->
     <script src="https://kit.fontawesome.com/31149d48b0.js" crossorigin="anonymous"></script>
-    <title>Home</title>
+    <title>Contact</title>
+    <style>
+        .container-fluid {
+            padding-top: 100px;
+            padding-left: 58px;
+            padding-right: 58px;
+        }
+
+        .fa {
+            padding: 20px 15px;
+            font-size: 30px;
+            width: 70px;
+            text-align: center;
+            border-radius: 50%;
+            text-decoration: none;
+            margin: auto;
+        }
+
+        /* Add a hover effect if you want */
+        .fa:hover {
+            opacity: 0.7;
+        }
+
+        .fa-facebook {
+            background: #3B5998;
+            color: white;
+            border: 1px solid white;
+        }
+
+        .fa-facebook:hover,
+        .fa-youtube:hover,
+        .fa-github:hover {
+            color: white;
+        }
+
+        .fa-youtube {
+            background: #bb0000;
+            color: white;
+            border: 1px solid white;
+        }
+
+        .fa-github {
+            background: black;
+            color: white;
+            border: 1px solid white;
+        }
+
+        .header {
+            margin: auto;
+            text-align: center;
+            padding: 15px 20px;
+            color: white;
+        }
+
+        .row {
+            padding: 15px 20px;
+        }
+    </style>
     <link rel="icon" href="<?=base_url()?>/img/oie_oie_trim_image.png" type="image/gif">
 </head>
 
@@ -152,13 +209,13 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
+                        <a class="nav-link" href="<?= site_url('portfolio/index')?>">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="https://github.com/ZenG192000" target="_blank">Portfolio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
+                        <a class="nav-link" href="<?= site_url('portfolio/contact')?>">Contact</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="<?= site_url('portfolio/about')?>">About</a>
@@ -169,20 +226,20 @@
     </nav>
     <section class="bgimage" id="home">
         <div class="container-fluid">
+            <div class="header">
+                <h1>Social Media</h1>
+            </div>
             <div class="row">
-                <div class="col">
-                    <img id="me" style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/76273126?v=4"
-                        width="300" height="300" alt="">
-                    <h2 class="hero_title">Hi, it's me ZenG192000</h2>
-                    <p class="hero_desc">I am a Student in Immaculate Conception Institution</p>
-                </div>
-                <div class="col">
-                    <img id="me" style="border-radius: 50%;" src="<?=base_url()?>/img/toyota_logo.jpg" width="300"
-                        height="300" alt="">
-                    <h2 class="hero_title">Toyota Marilao Bulacan</h2>
-                    <p class="hero_desc">I am a OJT in Toyota Marilao Bulacan you can inquire a toyota motors go to
-                        contact page.</p>
-                </div>
+                <a href="https://www.facebook.com/ZenG2000" target="_" class="fa fa-facebook"></a>
+                <a href="https://www.youtube.com/@ZenG2000" target="_" class="fa fa-youtube"></a>
+                <a href="https://github.com/ZenG192000" target="_" class="fa fa-github"></a>
+            </div>
+            <div class="header">
+                <h1>For inquiries of Toyota Motors Contact us here</h1>
+            </div>
+            <div class="row">
+                <a href="https://www.facebook.com/PxI.Romero" target="_" class="fa fa-facebook"></a>
+                <p style="text-align: center; padding-top: 5px; color: white;">Agent: Joven Romero Almonte</p>
             </div>
         </div>
     </section>
